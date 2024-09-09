@@ -1,0 +1,48 @@
+.txt{
+    background-color: #8bd1d7;
+    height: 20rem;
+}
+.txt:hover{
+    background-color: #8bd1d7;
+}
+
+.button{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 10px;
+}
+.box{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 7rem;
+    border: 2px solid black;
+    margin: 5rem;
+    border-radius: 10px;
+    background-color: #3ef4f7;
+
+}
+.box:hover{
+    border-color: white;
+}
+.words{
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    text-align: center;
+    align-items: center;
+    height: 7rem;
+   
+}
+
+.preview{
+    height: 10rem;
+    border: 2px solid gray;
+    border-radius: 10px;
+    display: flex;
+    height: 7rem;
+    margin: 3%;
+    border: 2px solid transparent;
+    
+}

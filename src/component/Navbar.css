@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+}.container-fluid{
+    margin-top: -0.3rem;
+    margin-bottom: -0.5rem;
+    border-radius: 10px;
+    background-color: rgb(245, 145, 163);;
+}
+
+body{
+    border-radius: 10px;
+    background-color: #dfc8e1;
+}
+.exchange{
+    display: flex;
+    justify-content:end;
+    align-items: center;
+    margin-left: 3rem;
+    font-size: larger;
+    
+}
+.file{
+    display: flex;
+    justify-content:end;
+    align-items: center;
+    margin-left: 40rem;
+    font-size: larger;
+
+}
