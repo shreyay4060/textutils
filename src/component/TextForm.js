@@ -18,6 +18,15 @@ export default function TextForm(props) {
         let newtext=("")
         setText(newtext)
     }
+    const handleOnCopy=()=>{
+        let text=document.getElementById("myBox");
+        text.select();
+        navigator.clipboard.writeText(text.value);
+    }
+    // const handleOnExtraSpaces=()=>{
+    //     let newText=text.split(/[]+/);
+    //     setText(newText.join(" "))
+    // }
     const [text,setText]=useState("")
     
   return (
@@ -31,10 +40,12 @@ export default function TextForm(props) {
        <button className="btn btn-primary" onClick={handleOnClick}>Convert To UpperCase</button>
        <button className="btn btn-primary" onClick={handleOnLow}>Convert To LowerCase</button>
        <button className="btn btn-primary" onClick={handleOnClear}>Clear Text</button>
+       <button className="btn btn-primary" onClick={handleOnCopy}>Copy Text</button>
+       {/* <button className="btn btn-primary" onClick={handleOnExtraSpaces}>Remove Extra Spaces</button> */}
        </div>
     </div>
     <div className="box">
-     <p className='my-5 words'>{text.split(" ").length} is words and {text.length} is characters</p>
+     <p className='my-5 words'>There are {text.split(" ").length}  words and {text.length} characters</p>
     <p className='my-5'>{0.008*text.split(" ").length} Minutes are required to read your msg</p>
     
     </div>
